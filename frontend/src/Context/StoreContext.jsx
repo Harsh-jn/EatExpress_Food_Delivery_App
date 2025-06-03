@@ -3,7 +3,7 @@ export const StoreContext = createContext(null);
 import axios from "axios"
 const StoreContextProvider = (props) => {
   const[cartItems,setCartItems]= useState({})
-  const url="https://eatexpress-food-delivery-app-1.onrender.com";
+  const url="https://eatexpress-food-delivery.onrender.com";
   const[token,setToken]=useState("")
   const[food_list,Setfood_list]=useState([])
   const addToCart = async(itemId)=>{
